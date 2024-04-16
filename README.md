@@ -36,6 +36,32 @@ Diese Einstellung ist ebenfalls in der Datei config.h zu finden...
 - die Stunde der Abschaltung des AccessPoints stellen Sie als Zahl hinter dem #define *WIFI_AP_SWITCHOFF_HOUR* ein
 - die Stunde der Aktivierung des AccessPoints stellen Sie als Zahl hinter dem #define *WIFI_AP_SWITCHON_HOUR* ein
 
+Mit Ihrem Handy, Tablet oder PC können Sie sich mit diesem AccessPoint verbinden und unter der HTTP Adresse http://192.168.4.1 die aktuellen Daten abrufen bzw. ändern.
+
+# Funktionen der WiFi Steckdose
+
+## Timer
+
+Der Timer dient zum direkten Einschalten bzw Abschalten. Dabei können Sie Dauer der Einschaltung wählen - diese sind:
+
+- 15 Minuten
+- 30 Minuten
+- 60 Minuten
+- sofortiges Abschalten
+
+## Alarm
+
+Eine weitere Möglichkeit sind sogenannte Alarme. Das sind vordefinierte Ein-/Abschaltzeiten, die für jeden Wochentag separat eingestellt werden können.
+Die WiFi Steckdose verfügt über DREI vordefinierte Alarme - diese sind:
+
+- Normal
+- Wochenende
+- Urlaub
+
+Die Alarme oder Ein-/Abschaltprogramme können Sie über den AccessPoint aktivieren. Allerdings lassen sich diese Alarme nicht frei ändern, sondern nur im Arduino Quellcode.
+Sie müssen hierzu in der Datei *alarm.h* die Werte in den Strukturen *tAlarmDay AlarmNormal[]*, *tAlarmDay AlarmWeekend[]* und/oder *tAlarmDay AlarmVacation[]* ändern.
+
+
 
 
 
